@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const apiEndpoint = 'data.json'; // URL Web Service (Local/Relative)
+    const apiEndpoint = 'data.json'; 
 
-    // Skenario: Menggunakan Fetch API untuk mengambil data (GET Request)
     fetch(apiEndpoint)
         .then(response => {
             if (!response.ok) {
@@ -19,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function renderPortfolio(data) {
-    // 1. Render Profile
     document.getElementById('nav-name').textContent = data.profile.name;
     document.getElementById('hero-name').textContent = data.profile.name;
     document.getElementById('hero-role').textContent = data.profile.role;
@@ -27,7 +25,6 @@ function renderPortfolio(data) {
     document.getElementById('hero-desc').textContent = data.profile.bio;
     document.getElementById('profile-img').src = data.profile.avatar;
 
-    // 2. Render Skills
     const skillsContainer = document.getElementById('skills-list');
     data.skills.forEach(skill => {
         const span = document.createElement('span');
@@ -36,7 +33,6 @@ function renderPortfolio(data) {
         skillsContainer.appendChild(span);
     });
 
-    // 3. Render Projects
     const projectContainer = document.getElementById('project-list');
     data.projects.forEach(project => {
         const card = document.createElement('div');
@@ -49,12 +45,11 @@ function renderPortfolio(data) {
         projectContainer.appendChild(card);
     });
 
-    // 4. Render Contact
     const contactContainer = document.getElementById('contact-links');
-    const { email, github, linkedin } = data.contact;
+    const { email, linkedin, contact} = data.contact;
     contactContainer.innerHTML = `
         <a href="mailto:${email}">Email</a> | 
-        <a href="https://${github}" target="_blank">GitHub</a> | 
-        <a href="https://${linkedin}" target="_blank">LinkedIn</a>
+        <a href="https://${linkedin}" target="_blank">LinkedIn</a> |
+        <a href="https://${contact}" target=_blank">Contact</a>
     `;
 }
