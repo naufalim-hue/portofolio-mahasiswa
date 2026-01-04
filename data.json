@@ -4,7 +4,7 @@
         "role": "Mahasiswa PTIK & Junior Web Developer",
         "university": "Universitas Negeri Jakarta",
         "cohort": "Angkatan 2023",
-        "bio": "Mahasiswa Pendidikan Teknik Informatika dan Komputer yang berfokus pada pengembangan sistem web dan teknologi cloud. Senang mengeksplorasi REST API dan arsitektur Microservices.",
+        "bio": "Mahasiswa Pendidikan Teknik Informatika dan Komputer yang berfokus pada Pengembangan Sistem Web dan Teknologi Cloud. Sedang belajar mengenai eksplorasi REST API dan arsitektur Microservices.",
         "avatar": "https://ui-avatars.com/api/?name=Naufal+Irfan&background=0D8ABC&color=fff&size=200"
     },
     "skills": [
@@ -28,8 +28,8 @@
     ],
     "contact": {
         "email": "naufal.irfan.muzaqi@mhs.unj.ac.id",
-        "github": "github.com/naufalim-hue",
-        "linkedin": "linkedin.com/in/naufairfanmuzaqi"
+        "linkedin": "linkedin.com/in/naufairfanmuzaqi",
+        "Contact via WhatsApp": "https://wa.me/6288239289247"
     }
 }
 
