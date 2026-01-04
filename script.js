@@ -50,6 +50,6 @@ function renderPortfolio(data) {
     contactContainer.innerHTML = `
         <a href="mailto:${email}">Email</a> | 
         <a href="https://${linkedin}" target="_blank">LinkedIn</a> |
-        <a href="https://${contact}" target=_blank">Contact</a>
+        <a href="https://${contact}" target="_blank">Contact</a>
     `;
 }
